@@ -20,18 +20,10 @@
 
 namespace gmor {
 
-#define EN_CHI2
-#ifdef EN_CHI2
 constexpr float CHI_1_95 = 1.960;
 constexpr float CHI_2_95 = 2.448;
 constexpr float CHI_2_95_SQUARE = 2.169;
 constexpr float CHI_3_95 = 2.796;
-#else
-constexpr float CHI_1_95 = 1.;
-constexpr float CHI_2_95 = 1.;
-constexpr float CHI_2_95_SQUARE = 1.;
-constexpr float CHI_3_95 = 1.;
-#endif
 
 // Use cube mapping
 using ProjectionType = SphereProjCube<float>;

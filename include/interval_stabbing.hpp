@@ -75,19 +75,6 @@ WeightT intervalStabbing(Intervals<BorderT, WeightT>& intervals, BorderT* bound_
 template <typename BorderT, typename WeightT>
 std::vector<uint32_t> intervalStabbingFilterIndices(CenterIndices<BorderT, WeightT>& center_indices, BorderT len);
 
-/**
- * @brief Intersect two sets to find the same indices
- *
- * @tparam T Type
- * @param set1 Input set of indices
- * @param set2 Input set of indices
- * @return std::unordered_set<T> Maximum ovelapping set
- *
- * A naive idea is filtering the indices of correspondences in the two 1D sequences. However, only h(x, y) = f(x) * g(y)
- * is accurate.
- */
-template <typename T> std::unordered_set<T> intersectSet(std::unordered_set<T>& set1, std::unordered_set<T>& set2);
-
 /*****************Implementation******************/
 
 template <typename BorderT, typename WeightT>
@@ -203,21 +190,4 @@ std::vector<uint32_t> intervalStabbingFilterIndices(CenterIndices<BorderT, Weigh
     return indices;
 }
 
-template <typename T> std::unordered_set<T> intersectSet(std::unordered_set<T>& set1, std::unordered_set<T>& set2) {
-    std::unordered_set<T> intersection;
-    if (set1.size() < set2.size()) {
-        for (const auto& index : set1) {
-            if (set2.find(index) != set2.end()) {
-                intersection.insert(index);
-            }
-        }
-    } else {
-        for (const auto& index : set2) {
-            if (set1.find(index) != set1.end()) {
-                intersection.insert(index);
-            }
-        }
-    }
-    return intersection;
-}
 } // namespace gmor
