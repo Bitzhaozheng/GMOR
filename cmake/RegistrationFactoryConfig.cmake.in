@@ -1,0 +1,15 @@
+@PACKAGE_INIT@
+
+include("${CMAKE_CURRENT_LIST_DIR}/@PROJECT_NAME@Targets.cmake")
+
+include(CMakeFindDependencyMacro)
+
+if(NOT TARGET @PROJECT_NAME@::@PROJECT_NAME@)
+    message(FATAL_ERROR "Target '@PROJECT_NAME@::@PROJECT_NAME@' is not found")
+endif()
+
+set(@PROJECT_NAME@_FOUND TRUE)
+set(@PROJECT_NAME@_VERSION @PROJECT_VERSION@)
+
+message(STATUS "Found @PROJECT_NAME@ library version @PROJECT_VERSION@")
+message(STATUS "Usage: target_link_libraries(FOO PRIVATE @PROJECT_NAME@::@PROJECT_NAME@)")

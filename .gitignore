@@ -1,3 +1,31 @@
+# User-specific files (MonoDevelop/Xamarin Studio)
+*.userprefs
+.cache/*
+
+# Build results
+[Bb]uild*/
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# Dataset
+Dataset/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# CMake
+CMakePresets.json
+CMakeUserPresets.json
+
 # Prerequisites
 *.d
 

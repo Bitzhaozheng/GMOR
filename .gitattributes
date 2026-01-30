@@ -1,0 +1,61 @@
+﻿###############################################################################
+# Set default behavior to automatically normalize line endings.
+###############################################################################
+* text=auto
+
+# Explicitly declare text files you want to always be normalized and converted
+# to native line endings on checkout.
+*.c text
+*.cc text
+*.cxx text
+*.cpp text
+*.cu text
+*.h text
+*.hpp text
+*.cuh text
+
+# Declare files that will always have CRLF line endings on checkout.
+*.sln text eol=crlf
+*.vcproj text eol=crlf
+
+# Windows bat
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Powershell scripts
+*.ps1 text eol=crlf
+*.psm1 text eol=crlf
+
+# Dockerfile and Linux shell scripts
+Dockerfile text eol=lf
+*.sh text eol=lf
+*.bash text eol=lf
+*.zsh text eol=lf
+
+# Configure files
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# Denote all files that are truly binary and should not be modified.
+*.png binary
+*.jpg binary
+*.gif binary
+
+###############################################################################
+# diff behavior for common document formats
+# 
+# Convert binary document formats to text before diffing them. This feature
+# is only available from the command line. Turn it on by uncommenting the 
+# entries below.
+###############################################################################
+#*.doc   diff=astextplain
+#*.DOC   diff=astextplain
+#*.docx  diff=astextplain
+#*.DOCX  diff=astextplain
+#*.dot   diff=astextplain
+#*.DOT   diff=astextplain
+#*.pdf   diff=astextplain
+#*.PDF   diff=astextplain
+#*.rtf   diff=astextplain
+#*.RTF   diff=astextplain
