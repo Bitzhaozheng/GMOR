@@ -209,7 +209,7 @@ If you find this project useful in your work, please consider citing:
 
 ```
 @misc{zheng2025,
-  title={Robust Point Cloud Registration via Geometric Overlapping Guided Rotation Search},
+  title={GMOR: A Lightweight Robust Point Cloud Registration Framework via Geometric Maximum Overlapping},
   author={Zheng, Zhao and Fan, Jingfan and Shao, Long and Song, Hong and Ai, Danni and Fu, Tianyu and Xiao, Deqiang and Wang, Yongtian and Yang, Jian},
   publisher = {arXiv},
   year={2025}
