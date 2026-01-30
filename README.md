@@ -4,8 +4,8 @@
 
 This repository contains the C++ implementation of following algorithms:
 
-- Official implementation of "Robust Point Cloud Registration via Geometric Overlapping Guided Rotation Search" (Under review)
-- Unofficial implementation of TR-DE: "Deterministic Point Cloud Registration via Novel Transformation Decomposition" (Wen Chen *et al*., CVPR 2022)
+- Official implementation of "[Robust Point Cloud Registration via Geometric Overlapping Guided Rotation Search](https://arxiv.org/abs/2508.17427)" (Under review)
+- Unofficial implementation of reproduced TR-DE: "Deterministic Point Cloud Registration via Novel Transformation Decomposition" (Wen Chen *et al*., CVPR 2022)
 
 The framework of GMOR is as following:
 
