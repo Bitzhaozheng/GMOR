@@ -13,6 +13,7 @@ The framework of GMOR is as following:
 
 ## News
 
+- 2026.04: Rejected.
 - 2026.01: Add more comparative experiments and release source code. Submitted.
 - 2025.11: Rejected.
 - 2025.08: Upload to ArXiv and submitted.
